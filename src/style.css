@@ -170,11 +170,11 @@ h1 { margin: 0; color: var(--text-primary); font-size: 52px; line-height: 1.12; 
   .tabs-wrap { justify-content: stretch; padding: 14px 12px 0; }
   .tool-tabs { width: 100%; justify-content: flex-start; padding: 5px; }
   .tool-tab { flex: 1 0 auto; padding: 0 13px; font-size: 13px; }
-  .workspace { min-height: 450px; padding: 14px 12px 250px; }
-  .drop-area { min-height: 390px; height: 52vh; }
+  .workspace { min-height: 0; padding: 14px 12px 12px; }
+  .drop-area { min-height: 260px; height: min(42vh,400px); }
   .empty-state { padding: 18px; }
   .empty-state p { max-width: 340px; }
-  .floating-bar { bottom: 8px; left: 8px; width: calc(100% - 16px); max-width: none; min-height: 56px; padding: 8px; gap: 8px; border-radius: var(--radius-lg); justify-content: space-between; transform: none; }
+  .floating-bar { position: relative; inset: auto; width: 100%; max-width: none; min-height: 56px; margin: 12px 0 0; padding: 8px; gap: 8px; border-radius: var(--radius-lg); justify-content: space-between; transform: none; }
   .action-status { max-width: 100px; padding-left: 5px; font-size: 11px; }
   .edit-controls { flex: 1 1 100%; justify-content: center; flex-wrap: wrap; gap: 7px; order: 5; }
   .pending-actions { flex: 1 1 100%; justify-content: center; gap: 7px; }
@@ -191,7 +191,7 @@ h1 { margin: 0; color: var(--text-primary); font-size: 52px; line-height: 1.12; 
   .nav-upload svg { width: 18px; height: 18px; }
   .action-status { display: none; }
   .download-divider { display: none; }
-  .floating-bar { width: calc(100% - 16px); }
+  .floating-bar { width: 100%; }
 }
 @media (max-width: 639px) {
   html,body { overflow-x: clip; }
